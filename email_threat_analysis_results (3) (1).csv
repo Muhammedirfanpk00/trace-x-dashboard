@@ -1,0 +1,2 @@
+analysis_type,predicted_label,benign_probability,phishing_probability,urls_found,indicators,note
+email_threat_analysis,phishing,0.1098,0.8902,"[""http://company-security-login.com/verify""]","[""Account or credential-related language detected"", ""Non-HTTPS URL detected: http://company-security-login.com/verify"", ""Urgent or pressure-based language detected""]","Predictions and indicators are advisory, not proof of an attack."

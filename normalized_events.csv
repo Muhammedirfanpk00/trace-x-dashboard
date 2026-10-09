@@ -1,0 +1,23 @@
+event_id,scenario_id,timestamp,event_type,user,ip,domain,url,device,file,source,description,risk_score
+L001,ATTACK-001,2026-10-08 09:05:00,LOGIN,employee01,192.168.1.25,,,LAPTOP-01,,login_logs.csv,Successful login from 192.168.1.25 using LAPTOP-01,0
+E001,ATTACK-001,2026-10-08 09:12:00,EMAIL,employee01,,company-support.com,http://company-security-login.com/verify,,,emails.csv,Urgent: Verify Your Account - Your account will be suspended. Verify immediately using the link.,0
+N001,ATTACK-001,2026-10-08 09:15:00,NETWORK,,185.220.101.45,company-security-login.com,/verify,,,network_logs.csv,URL Access,0
+N002,ATTACK-001,2026-10-08 09:17:00,NETWORK,,185.220.101.45,company-security-login.com,/login,,,network_logs.csv,Login Page Access,0
+L002,ATTACK-001,2026-10-08 09:18:00,LOGIN,employee01,185.220.101.45,,,UNKNOWN-DEVICE,,login_logs.csv,Successful login from 185.220.101.45 using UNKNOWN-DEVICE,0
+F001,ATTACK-001,2026-10-08 09:21:00,FILE_ACCESS,employee01,,,,UNKNOWN-DEVICE,company_policy.pdf,file_access.csv,Read - company_policy.pdf - Sensitivity: Low,0
+N003,ATTACK-001,2026-10-08 09:22:00,NETWORK,,185.220.101.45,internal-company-server.com,,,,network_logs.csv,Internal Server Connection,0
+F002,ATTACK-001,2026-10-08 09:23:00,FILE_ACCESS,employee01,,,,UNKNOWN-DEVICE,employee_salary.xlsx,file_access.csv,Read - employee_salary.xlsx - Sensitivity: High,0
+F003,ATTACK-001,2026-10-08 09:24:00,FILE_ACCESS,employee01,,,,UNKNOWN-DEVICE,customer_database.xlsx,file_access.csv,Read - customer_database.xlsx - Sensitivity: Critical,0
+N004,ATTACK-001,2026-10-08 09:25:00,NETWORK,,185.220.101.45,internal-company-server.com,,,,network_logs.csv,Large Data Transfer,0
+F004,ATTACK-001,2026-10-08 09:26:00,FILE_ACCESS,employee01,,,,UNKNOWN-DEVICE,financial_records.xlsx,file_access.csv,Download - financial_records.xlsx - Sensitivity: Critical,0
+L003,NORMAL-001,2026-10-08 10:20:00,LOGIN,employee02,192.168.1.30,,,LAPTOP-02,,login_logs.csv,Successful login from 192.168.1.30 using LAPTOP-02,0
+N007,NORMAL-001,2026-10-08 10:25:00,NETWORK,,192.168.1.30,company.com,https://company.com,,,network_logs.csv,Normal Website Access,0
+E002,NORMAL-001,2026-10-08 10:30:00,EMAIL,employee02,,company.com,,,,emails.csv,Monthly HR Update - Please find the monthly HR information.,0
+F006,NORMAL-001,2026-10-08 10:40:00,FILE_ACCESS,employee02,,,,LAPTOP-02,hr_policy.pdf,file_access.csv,Read - hr_policy.pdf - Sensitivity: Low,0
+L004,NORMAL-002,2026-10-08 11:10:00,LOGIN,employee03,192.168.1.35,,,LAPTOP-03,,login_logs.csv,Successful login from 192.168.1.35 using LAPTOP-03,0
+E003,NORMAL-002,2026-10-08 11:45:00,EMAIL,employee03,,company.com,,,,emails.csv,System Maintenance Notice - System maintenance is scheduled for today.,0
+E004,ATTACK-002,2026-10-08 13:05:00,EMAIL,employee02,,company-help.com,http://company-login-security.com/update,,,emails.csv,Critical Security Update - Complete the security update immediately.,0
+N005,ATTACK-002,2026-10-08 13:08:00,NETWORK,,103.55.20.77,company-login-security.com,/update,,,network_logs.csv,URL Access,0
+L005,ATTACK-002,2026-10-08 13:12:00,LOGIN,employee02,103.55.20.77,,,UNKNOWN-DEVICE,,login_logs.csv,Successful login from 103.55.20.77 using UNKNOWN-DEVICE,0
+N006,ATTACK-002,2026-10-08 13:15:00,NETWORK,,103.55.20.77,internal-company-server.com,,,,network_logs.csv,Sensitive Server Access,0
+F005,ATTACK-002,2026-10-08 13:18:00,FILE_ACCESS,employee02,,,,UNKNOWN-DEVICE,employee_records.xlsx,file_access.csv,Read - employee_records.xlsx - Sensitivity: High,0
